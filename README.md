@@ -29,12 +29,16 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+It allows you to implement html and css ideas while populating with dynamic data, for example with an API. As well as offering a way to split up your code element by element and then bring it all together by importing it to your App.js.
 
 1. Describe component state.
+It allows you to have the state of an object be a variable that can be changed through functions you design.
 
 1. Describe props.
+A parameter that allows you to use a variable to fill in data in other parts of your project, though not the best choice of words, is kind of what it is. Well not always.
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+I believe those are the functions that call out data within the changing value of props to have a dynamic page. But truthfully I'm unsure.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
