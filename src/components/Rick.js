@@ -18,6 +18,7 @@ const RickPicContainer = (props) => {
             </StyledRickInfo>
         
         </StyledRickPicContainer>
+
     )
 }
 
@@ -40,28 +41,6 @@ const StyledRickInfo = styled.div`
     height: 330px;
     position: relative;
     top: -270px;
-`;
-
-
-const Kyle = (props) => {
-    const {rickData} = props;
-    const rickText = [`Name: ${rickData.name}`, <br />, <br />, `Dead or Alive?: ${rickData.status}`];
-    return(
-        <StyledRickPicContainer>
-            <img src={rickData.image}
-            style={style.image}
-            />
-            <StyledRickInfo>
-                {rickText}
-
-            </StyledRickInfo>
-        
-        </StyledRickPicContainer>
-    )
-}
-
-const StyledKyleInfo = styled.div`
-
 `;
 
 
