@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import styled, { keyframes } from "styled-components";
-
+import RickPicContainer from './components/Character';
 
 const App = () => {
 
@@ -10,7 +10,8 @@ const App = () => {
   useEffect(() => {
     axios.get('https://rickandmortyapi.com/api/character/291')
       .then(res => {
-        console.log('this is the res', res.data);
+        console.log('this is the res', res.data.image);
+        SetRMData(res.data);
       })
       .catch(err => {
         console.log('this is the err', err);
@@ -26,6 +27,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Rick & Morty Characters</h1>
+      <RickPicContainer photoData={RMData} />
     </div>
   );
 }
